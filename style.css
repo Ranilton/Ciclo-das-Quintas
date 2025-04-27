@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0c095;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: min(90vw, 300px);
+  height: min(90vw, 300px);
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  background-color: #d2a679;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chord {
+  position: absolute;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+
+
+
+}
+
+#chord0 {
+  color: rgb(255, 0, 0);
+  background-color: white;
+}
+
+#chord1 {
+  color: rgb(68, 0, 255);
+}
+
+#chord2 {
+  color: rgb(255, 0, 191);
+}
+
+#chord3 {
+  color: rgb(0, 238, 255);
+}
+
+#chord4 {
+  color: rgb(51, 255, 0);
+}
+
+#chord5 {
+  color: rgb(255, 251, 0);
+}
+
+#chord6 {
+  color: rgb(116, 116, 116);
+}
+
+#currentTone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  background-color: white;
+}
+
+#currentTone,
+.chord {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+}
+
+.buttons {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #8b5a2b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 3vw;
+}
+
+@media (min-width: 600px) {
+  .chord {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
